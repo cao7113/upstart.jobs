@@ -1,0 +1,8 @@
+start on stopped test/mutualb
+
+script 
+  echo "Date: `date` running job $UPSTART_JOB $JOB">>/tmp/mutual.log
+  env >>/tmp/mutual.log
+  echo ======>>/tmp/mutual.log
+  echo ====in a >>/tmp/mutual.log
+end script

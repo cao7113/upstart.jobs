@@ -1,0 +1,7 @@
+for n in $(seq 3)
+do
+  sudo start test/sync_main N=$n
+done
+
+sleep 10
+tail -n 20 /tmp/test.log

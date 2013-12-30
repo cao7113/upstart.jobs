@@ -1,0 +1,3 @@
+sudo initctl emit eventa
+sleep 10
+tail -n 20 /tmp/eventa.log
